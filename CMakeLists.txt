@@ -2,6 +2,7 @@
 cmake_minimum_required(VERSION 3.20)
 # In CMake < 3.20 GENERATED property doesn't propagate out of directory scope
 # So it should be set manually for all BYPRODUCTS for CMake to correctly configure
+# See docs: https://cmake.org/cmake/help/latest/prop_sf/GENERATED.html
 project(cmake-versioning)
 
 if(NOT DEFINED version_info_dir)
